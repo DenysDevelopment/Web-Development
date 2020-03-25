@@ -1,0 +1,178 @@
+*
+   padding: 0
+   margin: 0
+.container
+   max-width: 1170px
+   margin: 0 auto
+body
+   font-family: 'Roboto', sans-serif
+   color: #fff
+=tittle
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   line-height: 94px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: #FFFFFF;
+   margin-bottom: 100px
+   padding-top: 100px
+=wrap
+   justify-content: space-between
+   display: flex
+   width: 440px
+   margin: 0 auto
+   color: #FFFFFF
+   
+   ul
+      li
+         list-style: none
+         margin-bottom: 60px
+         border-left: 2px solid #0048FF;
+         padding-left: 20px
+         a
+            color: #fff
+            text-decoration: none
+   .right
+      text-align: right
+      li
+         border-right: 2px solid #0048FF;
+         border-left: none
+         padding-right: 20px
+.header
+   background: url(../img/bg-first-screen.png)no-repeat center bottom / cover
+   height: 900px
+   z-index: 5
+   .logo
+      display: block
+      margin: 0 auto
+      width: 1000px
+   .nav
+      width: 600px
+      margin: 0 auto
+      .home
+         text-align: center
+         font-family: Roboto
+         font-style: normal
+         font-weight: bold
+         font-size: 22px
+         line-height: 26px
+         text-align: center
+         margin-bottom: 30px
+         a
+            text-decoration: none
+            color: #fff
+      .menu
+         display: flex
+         justify-content: space-evenly
+         li
+            list-style: none
+            a
+               color: #fff
+               text-decoration: none
+               font-family: 'Roboto'sans-serif
+               font-style: normal
+               font-weight: bold
+               font-size: 20px
+               color: #8F8E8E
+               &:hover,&:focus
+                  color: #fff
+   .sub-menu
+      display: flex
+      justify-content: space-between
+      width: 520px
+      padding-top: 42px
+      margin: 0 auto
+      li
+         list-style-type: none
+         a
+            text-decoration: none
+            font-family: 'Roboto'sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            color: #8F8E8E
+            &:hover,&:focus
+               color: #fff
+
+   
+   
+   
+.design
+   background: url(../img/bg-two-screen.png)no-repeat center / cover
+   height: 900px
+   top: 800px
+   z-index: -10
+   position: absolute
+   right: 0
+   left: 0
+   padding: 90px 0px
+   .wrapper
+      +wrap
+   h2
+      +tittle
+
+
+//preloader
+.preloader
+   height: 100%
+   width: 100%
+   background: #fff
+   position: fixed
+   left: 0
+   top: 0
+   z-index: 10000
+   perspective: 1600px
+   perspective-origin: 20% 50%
+   transition: 0.5s all
+   opacity: 1
+
+
+.spinner
+   width: 80px
+   height: 80px
+   border: 2px solid #f3f3f3
+   border-top: 3px solid #0088cf
+   border-radius: 100%
+   position: absolute
+   top: 0
+   bottom: 0
+   left: 0
+   right: 0
+   margin: auto
+   animation: spin 1s infinite linear
+
+
+.preloader.fade
+   opacity: 0
+
+
+.b-ico-preloader
+   background: url(http://weblaboratory.in.ua/wp-content/themes/graphy/images/new_logo.svg)
+   background-size: cover
+   width: 52px
+   height: 67px
+   position: absolute
+   top: 0
+   bottom: 0
+   left: 0
+   right: 0
+   margin: auto
+   animation: ico 5s infinite linear
+   transform-style: preserve-3d
+
+
+@keyframes spin
+   from
+      transform: rotate(0deg)
+   to
+      transform: rotate(360deg)
+
+
+
+@keyframes ico
+   from
+      transform: rotateY(0deg)
+   to
+      transform: rotateY(360deg)

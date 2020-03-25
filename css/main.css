@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.header {
+  background: url(../img/bg-first-screen.png) no-repeat center bottom/cover;
+  height: 900px;
+  z-index: 5;
+}
+
+.header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.header .nav {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header .nav .home {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header .nav .home a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header .nav .menu li {
+  list-style: none;
+}
+
+.header .nav .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto'sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #8F8E8E;
+}
+
+.header .nav .menu li a:hover, .header .nav .menu li a:focus {
+  color: #fff;
+}
+
+.header .sub-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 520px;
+  padding-top: 42px;
+  margin: 0 auto;
+}
+
+.header .sub-menu li {
+  list-style-type: none;
+}
+
+.header .sub-menu li a {
+  text-decoration: none;
+  font-family: 'Roboto'sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #8F8E8E;
+}
+
+.header .sub-menu li a:hover, .header .sub-menu li a:focus {
+  color: #fff;
+}
+
+.design {
+  background: url(../img/bg-two-screen.png) no-repeat center/cover;
+  height: 900px;
+  top: 800px;
+  z-index: -10;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 90px 0px;
+}
+
+.design .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 440px;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+
+.design .wrapper ul li {
+  list-style: none;
+  margin-bottom: 60px;
+  border-left: 2px solid #0048FF;
+  padding-left: 20px;
+}
+
+.design .wrapper ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.design .wrapper .right {
+  text-align: right;
+}
+
+.design .wrapper .right li {
+  border-right: 2px solid #0048FF;
+  border-left: none;
+  padding-right: 20px;
+}
+
+.design h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.preloader {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  -webkit-perspective: 1600px;
+          perspective: 1600px;
+  -webkit-perspective-origin: 20% 50%;
+          perspective-origin: 20% 50%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #0088cf;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+.preloader.fade {
+  opacity: 0;
+}
+
+.b-ico-preloader {
+  background: url(http://weblaboratory.in.ua/wp-content/themes/graphy/images/new_logo.svg);
+  background-size: cover;
+  width: 52px;
+  height: 67px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: ico 5s infinite linear;
+          animation: ico 5s infinite linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ico {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes ico {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
