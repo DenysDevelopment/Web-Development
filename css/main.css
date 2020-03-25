@@ -160,6 +160,17 @@ body {
   padding-top: 100px;
 }
 
+.html {
+  background: url(../img/bg-two-screen.png) no-repeat center/cover;
+  height: 900px;
+  top: 800px;
+  z-index: -10;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 90px 0px;
+}
+
 .preloader {
   height: 100%;
   width: 100%;
